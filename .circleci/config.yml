@@ -19,7 +19,7 @@ jobs:
             echo "test" > test
             git add test
             git commit -m "test"
-            git push
+            git push origin master
 
 executors:
   cci:
