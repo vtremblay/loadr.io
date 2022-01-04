@@ -19,8 +19,7 @@ jobs:
             echo "test" >> test
             git add test
             git commit -m "test"
-            git push origin master
-
+            git push
 executors:
   cci:
     docker:
