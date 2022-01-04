@@ -9,6 +9,8 @@ jobs:
   test_git:
     executor: cci
     steps:
+      - checkout:
+          path: ~/project
       - run:
           name: test
           command: |
