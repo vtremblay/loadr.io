@@ -16,7 +16,7 @@ jobs:
           command: |
             git config user.email "username@mydomain.com"
             git config user.name "My Name"
-            echo "test" > test
+            echo "test" >> test
             git add test
             git commit -m "test"
             git push origin master
