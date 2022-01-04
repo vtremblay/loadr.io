@@ -7,6 +7,7 @@ workflows:
       
 jobs:
   test_git:
+    executor: cci
     steps:
       - run:
           name: test
@@ -16,3 +17,8 @@ jobs:
             echo "test" > test
             git add test
             git commit -m "test"
+
+executors:
+  cci:
+    docker:
+      - image: circleci/circleci-cli:0.1.16535
